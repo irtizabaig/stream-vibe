@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Bell, Play, Search } from 'lucide-react'
 import { Link, NavLink } from 'react-router-dom'
 import SearchPage from '../../pages/SearchPage'
-import logo from '../../assets/images/Logo'
+import logo from '../../assets/images/Logo.png'
 
 const Nav = () => {
 
