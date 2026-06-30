@@ -2,13 +2,10 @@ import React, { useState } from 'react'
 import { Bell, Play, Search } from 'lucide-react'
 import { Link, NavLink } from 'react-router-dom'
 import SearchPage from '../../pages/SearchPage'
-import logo from '../assets/images/Logo.png'
+import logo from '../../assets/images/logo'
 
 const Nav = () => {
 
-    // const [exist, setexist] = useState(false)
-
-    // const navigate = useNavigate()
 
   return (
     <nav className="absolute top-[22px] left-0 w-full z-10">
