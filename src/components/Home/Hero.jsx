@@ -85,7 +85,7 @@ const Hero = () => {
         {/* Decorative ring mark */}
         <div className="absolute top-[186px] left-1/2 -translate-x-1/2 z-[2] w-70 h-70 rounded-full flex items-center justify-center overflow-hidden" >
           
-          <img src="../assets/images/Abstract Design.png" className='' />
+          <img src="../../assets/images/Abstract Design.png" className='' />
 
         </div>
 
