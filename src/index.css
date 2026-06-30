@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/font/Manrope-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/font/Manrope-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-manrope: "Manrope", sans-serif;
+}
+
+/* 3. Global body tag par apply karne ke liye */
+body {
+  font-family: var(--font-manrope);
+}
+
+#hero .swiper-button-next,
+#hero .swiper-button-prev {
+  top: auto !important;
+  bottom: 20% !important;
+  color: white !important;
+  padding: 15px !important;
+  width: 3vw !important;
+  height: 3vw !important;
+  background-color: black;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+#hero .swiper-button-prev{
+  left: 5% !important;
+}
+
+#hero .swiper-button-next{
+  right: 5% !important;
+}
+
+@media (max-width: 768px) {
+  #hero .swiper-button-next,
+#hero .swiper-button-prev {
+  /* width: 40px !important;
+  height: 40px !important;
+  padding: 10px !important; */
+  display: none;
+}
+}
