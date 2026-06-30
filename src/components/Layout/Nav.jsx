@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Bell, Play, Search } from 'lucide-react'
 import { Link, NavLink } from 'react-router-dom'
 import SearchPage from '../../pages/SearchPage'
+import logo from '../assets/images/Logo.png'
 
 const Nav = () => {
 
@@ -17,7 +18,7 @@ const Nav = () => {
               <div className="w-[min(1300px,calc(100%-40px))] mx-auto flex items-center justify-between">
 
                 <a href="/" className="inline-flex items-center gap-[9px] text-white text-[16px] font-extrabold tracking-tight no-underline">
-                  <img src="../assets/images/Logo.png" className='lg:w-50 w-35' />
+                  <img src={logo} className='lg:w-50 w-35' />
                 </a>
     
                 <div className="hidden md:inline-flex items-center gap-1 px-2 py-2 rounded-[10px] border-2 border-[#262626] bg-[rgba(15,15,15,0.86)] backdrop-blur-[10px]">
