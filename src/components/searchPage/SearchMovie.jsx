@@ -17,6 +17,7 @@ const SearchMovie = ({data}) => {
           <img
             src={`${ORIGINAL_IMAGE_URL}${data.poster_path}`}
             onError={(e) => (e.target.style.display = "none")}
+            loading="lazy"
             className="w-full h-full object-cover block"
           />
         </div>

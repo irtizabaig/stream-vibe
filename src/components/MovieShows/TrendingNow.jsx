@@ -66,7 +66,7 @@ const TrendingNow = ({data, type}) => {
 
               <div className="mb-5 min-h-[180px]">
                 <div className="h-[180px] bg-[#242424] rounded overflow-hidden">
-                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${movie.poster_path}`} onError={(e)=> e.target.style.display = 'none'} />
+                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${movie.poster_path}`} loading="lazy" onError={(e)=> e.target.style.display = 'none'} />
                 </div>
               </div>
 
@@ -93,7 +93,7 @@ const TrendingNow = ({data, type}) => {
 
               <div className="mb-5 min-h-[180px]">
                 <div className="h-[180px] bg-[#242424] rounded overflow-hidden">
-                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${show.poster_path}`} onError={(e)=> e.target.style.display = 'none'} />
+                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${show.poster_path}`} loading="lazy" onError={(e)=> e.target.style.display = 'none'} />
                 </div>
               </div>
 

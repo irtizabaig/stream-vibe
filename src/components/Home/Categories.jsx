@@ -67,6 +67,7 @@ const Categories = ({genres, loading, error, type}) => {
                     {genre.movies?.map((movie)=>{
                       return <div key={movie.id} className="h-[90px] rounded-[5px] overflow-hidden bg-[#242424]"><img 
                       alt={movie.title}
+                      loading="lazy"
                       src={`${IMAGE_BASE_URL}${movie.poster_path}`} 
                       onError={(e)=>{
                         e.target.style.display = "none"

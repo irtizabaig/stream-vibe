@@ -59,6 +59,7 @@ const MovieDetail = () => {
       <div className="relative lg:w-[1300px] mx-auto lg:h-[85vh] h-[60vh]">
         <img
           src={`${ORIGINAL_IMAGE_URL}${details.backdrop_path}`}
+          loading="lazy"
           className="absolute w-full h-full object-cover"
         />
 
@@ -145,6 +146,7 @@ const MovieDetail = () => {
         <img
           className="lg:w-16 lg:h-16 w-12 h-12 rounded-full object-cover mx-auto"
           src={`${IMAGE_BASE_URL}${e.profile_path}`}
+          loading="lazy"
           onError={(e)=> e.target.style.display = 'none'}
         />
         <p className="text-xs mt-2 text-gray-300">{e.name.split(' ')[0]}</p>

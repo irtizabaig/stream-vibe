@@ -16,6 +16,7 @@ const SearchShow = ({data}) => {
         <div className="w-full h-full rounded-[5px] overflow-hidden bg-[#242424]">
           <img
             src={`${ORIGINAL_IMAGE_URL}${data.poster_path}`}
+            loading="lazy"
             onError={(e) => (e.target.style.display = "none")}
             className="w-full h-full object-cover block"
           />

@@ -66,7 +66,7 @@ const NewReleased = ({data}) => {
 
               <div className="mb-5 min-h-[180px]">
                 <div className="h-[180px] bg-[#242424] rounded overflow-hidden">
-                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${e.poster_path}`} />
+                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${e.poster_path}`} loading="lazy" />
                 </div>
               </div>
 

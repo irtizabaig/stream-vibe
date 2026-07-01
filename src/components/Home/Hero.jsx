@@ -59,7 +59,7 @@ const Hero = () => {
             "https://image.tmdb.org/t/p/w300/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg",
           ].map((src, i) => (
             <div key={i} className="min-h-[200px] overflow-hidden rounded-lg bg-[#1a1a1a]">
-              <img src={src} alt=""  className="w-full h-full object-cover block" />
+              <img src={src} alt="nothing" loading="lazy" className="w-full h-full object-cover block" />
             </div>
           ))}
         </div>
@@ -86,7 +86,7 @@ const Hero = () => {
         {/* Decorative ring mark */}
         <div className="absolute top-[186px] left-1/2 -translate-x-1/2 z-[2] w-70 h-70 rounded-full flex items-center justify-center overflow-hidden" >
           
-          <img src={logo} className='' />
+          <img src={logo} loading="lazy" />
 
         </div>
 

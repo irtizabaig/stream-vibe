@@ -68,13 +68,13 @@ const TopInGenre = ({data, type}) => {
 
                 {genre.movie?.map((e)=>{
                   return <div key={e.id} className="h-[90px] bg-[#242424] rounded overflow-hidden">
-                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${e.poster_path}`} alt="" />
+                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${e.poster_path}`} loading="lazy" alt="" />
                 </div>
                 })}
 
                 {genre.shows?.map((e)=>{
                   return <div key={e.id} className="h-[90px] bg-[#242424] rounded overflow-hidden">
-                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${e.poster_path}`} alt="" />
+                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${e.poster_path}`} loading="lazy" alt="" />
                 </div>
                 })}
 

@@ -69,6 +69,7 @@ const GenrePage = () => {
         <div className="w-full h-full rounded-[5px] overflow-hidden bg-[#242424]">
           <img
             src={`${IMAGE_BASE_URL}${item.poster_path}`}
+            loading="lazy"
             onError={(e) => (e.target.style.display = "none")}
             className="w-full h-full object-cover block"
           />

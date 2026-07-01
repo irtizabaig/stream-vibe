@@ -75,13 +75,13 @@ const OurGenre = ({data, MovieLoading, showsLoading, error, type}) => {
 
                 {e.movie?.map((movie)=>{
                   return <div key={movie.id} className="h-[90px] bg-[#242424] rounded overflow-hidden">
-                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${movie.poster_path}`} alt="" />
+                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${movie.poster_path}`} loading="lazy" alt="" />
                 </div>
                 })}
 
                 {e.shows?.map((show)=>{
                   return <div key={show.id} className="h-[90px] bg-[#242424] rounded overflow-hidden">
-                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${show.poster_path}`} alt="" />
+                  <img className='w-full h-full object-cover' src={`${IMAGE_BASE_URL}${show.poster_path}`} loading="lazy" alt="" />
                 </div>
                 })}
 

@@ -38,6 +38,7 @@ const ShowDetail = () => {
 
         <img
           src={`${ORIGINAL_IMAGE_URL}${details.backdrop_path}`}
+          loading="lazy"
           className="absolute w-full h-full lg:rounded-2xl object-cover object-center"
         />
 
@@ -107,6 +108,7 @@ const ShowDetail = () => {
         <img
           className="lg:w-16 lg:h-16 h-12 w-12 rounded-full object-cover mx-auto"
           src={`${IMAGE_BASE_URL}${e.profile_path}`}
+          loading="lazy"
           onError={(e)=> e.target.style.display = 'none'}
         />
         <p className="text-xs mt-2 text-gray-300">{e.name.split(' ')[0]}</p>

@@ -66,7 +66,7 @@ useEffect(() => {
 
                   {/* IMAGE */}
                   <div className="w-[120px] h-[90px] bg-black rounded-md overflow-hidden flex items-center justify-center">
-                    <img src={`${IMAGE_BASE_URL}${e.still_path}`} className="opacity-30 w-full h-full object-cover" />
+                    <img src={`${IMAGE_BASE_URL}${e.still_path}`} className="opacity-30 w-full h-full object-cover" loading="lazy" />
                     <Play size={20} className="text-white z-10 absolute" />
                   </div>
 

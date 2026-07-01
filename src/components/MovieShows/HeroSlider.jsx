@@ -34,6 +34,7 @@ export default function HeroSlider({data}) {
               {/* Background Image */}
               <img
                 src={`${ORIGINAL_IMAGE_URL}${item.poster_path}`}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
 

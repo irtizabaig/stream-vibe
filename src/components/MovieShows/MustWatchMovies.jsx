@@ -67,7 +67,7 @@ const MustWatchMovies = ({data}) => {
 
               <div className="mb-5 min-h-[300px]">
                 <div className="h-[300px] bg-[#242424] rounded overflow-hidden">
-                  <img src={`${IMAGE_BASE_URL}${e.poster_path}`} className='w-full h-full object-cover' />
+                  <img src={`${IMAGE_BASE_URL}${e.poster_path}`} className='w-full h-full object-cover' loading="lazy" />
                 </div>
               </div>
 
